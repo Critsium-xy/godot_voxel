@@ -187,7 +187,8 @@ void simplify(
 				sizeof(Vector3f),
 				target_index_count,
 				p_error_threshold,
-				zylannmeshopt::meshopt_SimplifyLockBorder, // Crucial for chunk borders, see https://github.com/zeux/meshoptimizer/issues/311
+				// Crucial for chunk borders, see https://github.com/zeux/meshoptimizer/issues/311
+				zylannmeshopt::meshopt_SimplifyLockBorder,
 				&lod_error
 		);
 

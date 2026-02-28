@@ -9,8 +9,8 @@
 #include "transvoxel/transvoxel_cell_iterator.h"
 
 #ifdef VOXEL_ENABLE_SMOOTH_MESHING
-#include "../meshers/transvoxel/voxel_mesher_transvoxel.h"
 #include "../engine/detail_rendering/detail_rendering.h"
+#include "../meshers/transvoxel/voxel_mesher_transvoxel.h"
 #endif
 
 using namespace zylann::godot;
