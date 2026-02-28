@@ -59,12 +59,12 @@ public:
 	void set_mesh(
 			Ref<Mesh> mesh,
 			GeometryInstance3D::GIMode gi_mode,
-			RenderingServer::ShadowCastingSetting shadow_setting,
+			RenderingServerEnums::ShadowCastingSetting shadow_setting,
 			int render_layers_mask,
 			Ref<Mesh> shadow_occluder_mesh
 #ifdef TOOLS_ENABLED
 			,
-			RenderingServer::ShadowCastingSetting shadow_occluder_mode
+			RenderingServerEnums::ShadowCastingSetting shadow_occluder_mode
 #endif
 	) {
 		if (shadow_occluder_mesh.is_null()) {

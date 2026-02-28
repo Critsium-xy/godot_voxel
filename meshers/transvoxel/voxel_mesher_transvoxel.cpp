@@ -383,7 +383,7 @@ void VoxelMesherTransvoxel::build(VoxelMesher::Output &output, const VoxelMesher
 	output.primitive_type = Mesh::PRIMITIVE_TRIANGLES;
 
 	// Transvoxel transitions data
-	output.mesh_flags = (RenderingServer::ARRAY_CUSTOM_RGBA_FLOAT << Mesh::ARRAY_FORMAT_CUSTOM0_SHIFT);
+	output.mesh_flags = (RenderingServerEnums::ARRAY_CUSTOM_RGBA_FLOAT << Mesh::ARRAY_FORMAT_CUSTOM0_SHIFT);
 
 	// Texture data
 	switch (texture_mode) {
@@ -391,7 +391,7 @@ void VoxelMesherTransvoxel::build(VoxelMesher::Output &output, const VoxelMesher
 			break;
 		case TEXTURES_MIXEL4_S4:
 		case TEXTURES_SINGLE_S4:
-			output.mesh_flags |= (RenderingServer::ARRAY_CUSTOM_RG_FLOAT << Mesh::ARRAY_FORMAT_CUSTOM1_SHIFT);
+			output.mesh_flags |= (RenderingServerEnums::ARRAY_CUSTOM_RG_FLOAT << Mesh::ARRAY_FORMAT_CUSTOM1_SHIFT);
 			break;
 		default:
 			ZN_PRINT_ERROR("Unhandled texture mode");

@@ -52,14 +52,14 @@ VoxelMeshBlockVLT::~VoxelMeshBlockVLT() {
 void VoxelMeshBlockVLT::set_mesh(
 		Ref<Mesh> mesh,
 		GeometryInstance3D::GIMode gi_mode,
-		RenderingServer::ShadowCastingSetting shadow_casting,
+		RenderingServerEnums::ShadowCastingSetting shadow_casting,
 		int render_layers_mask,
 		Ref<Mesh> shadow_occluder_mesh,
 		int32_t p_col_vertex_end,
 		int32_t p_col_index_end
 #ifdef TOOLS_ENABLED
 		,
-		RenderingServer::ShadowCastingSetting shadow_occluder_mode
+		RenderingServerEnums::ShadowCastingSetting shadow_occluder_mode
 #endif
 ) {
 	// TODO Don't add mesh instance to the world if it's not visible.
@@ -160,7 +160,7 @@ void VoxelMeshBlockVLT::set_gi_mode(GeometryInstance3D::GIMode mode) {
 	}
 }
 
-void VoxelMeshBlockVLT::set_shadow_casting(RenderingServer::ShadowCastingSetting mode) {
+void VoxelMeshBlockVLT::set_shadow_casting(RenderingServerEnums::ShadowCastingSetting mode) {
 	VoxelMeshBlock::set_shadow_casting(mode);
 
 	for (unsigned int i = 0; i < _transition_mesh_instances.size(); ++i) {
@@ -185,7 +185,7 @@ void VoxelMeshBlockVLT::set_transition_mesh(
 		Ref<Mesh> mesh,
 		unsigned int side,
 		GeometryInstance3D::GIMode gi_mode,
-		RenderingServer::ShadowCastingSetting shadow_casting,
+		RenderingServerEnums::ShadowCastingSetting shadow_casting,
 		int render_layers_mask
 ) {
 	DirectMeshInstance &mesh_instance = _transition_mesh_instances[side];
