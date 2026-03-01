@@ -3,6 +3,10 @@
 #include "../../../util/godot/core/string.h"
 #include "voxel_blocky_type_library_ids_dialog.h"
 
+#ifdef ZN_GODOT
+#include "../../../util/godot/core/class_db.h"
+#endif
+
 namespace zylann::voxel {
 
 bool VoxelBlockyTypeLibraryEditorInspectorPlugin::_zn_can_handle(const Object *p_object) const {

@@ -9,6 +9,10 @@
 #include "blocky_model_baking_context.h"
 #include "voxel_blocky_library_base.h"
 
+#ifdef ZN_GODOT
+#include "../../util/godot/core/class_db.h"
+#endif
+
 namespace zylann::voxel {
 
 VoxelBlockyModelFluid::VoxelBlockyModelFluid() {}

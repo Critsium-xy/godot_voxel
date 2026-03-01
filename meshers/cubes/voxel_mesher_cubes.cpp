@@ -12,6 +12,10 @@
 #include "../../util/profiling.h"
 #include "../../util/string/format.h"
 
+#ifdef ZN_GODOT
+#include "../../util/godot/core/class_db.h"
+#endif
+
 // TODO Binary greedy mesher optimization
 // https://www.youtube.com/watch?v=qnGoGq7DWMc
 

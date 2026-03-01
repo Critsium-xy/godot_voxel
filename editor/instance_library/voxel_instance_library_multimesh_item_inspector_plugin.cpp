@@ -7,6 +7,10 @@
 #include "voxel_instance_library_editor_plugin.h"
 #include "voxel_instance_library_multimesh_item_editor_plugin.h"
 
+#ifdef ZN_GODOT
+#include "../../util/godot/core/class_db.h"
+#endif
+
 namespace zylann::voxel {
 
 bool VoxelInstanceLibraryMultiMeshItemInspectorPlugin::_zn_can_handle(const Object *p_object) const {

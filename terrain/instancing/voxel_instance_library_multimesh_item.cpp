@@ -7,6 +7,10 @@
 #include "../../util/godot/core/packed_arrays.h"
 #include "voxel_instancer.h"
 
+#ifdef ZN_GODOT
+#include "../../util/godot/core/class_db.h"
+#endif
+
 namespace zylann::voxel {
 
 const char *VoxelInstanceLibraryMultiMeshItem::MANUAL_SETTINGS_GROUP_NAME = "Manual settings";

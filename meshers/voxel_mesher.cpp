@@ -8,6 +8,10 @@
 #include "../util/profiling.h"
 #include "transvoxel/transvoxel_cell_iterator.h"
 
+#ifdef ZN_GODOT
+#include "../util/godot/core/class_db.h"
+#endif
+
 #ifdef VOXEL_ENABLE_SMOOTH_MESHING
 #include "../engine/detail_rendering/detail_rendering.h"
 #include "../meshers/transvoxel/voxel_mesher_transvoxel.h"

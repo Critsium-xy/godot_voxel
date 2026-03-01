@@ -1,6 +1,9 @@
 #include "voxel_blocky_attribute_direction.h"
 #include "../../../constants/voxel_string_names.h"
 #include "../../../util/math/ortho_basis.h"
+#ifdef ZN_GODOT
+#include "../../../util/godot/core/class_db.h"
+#endif
 
 namespace zylann::voxel {
 
